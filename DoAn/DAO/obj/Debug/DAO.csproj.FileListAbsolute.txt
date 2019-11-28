@@ -1,0 +1,8 @@
+D:\LTUD\DoAn\DAO\bin\Debug\DAO.dll
+D:\LTUD\DoAn\DAO\bin\Debug\DAO.pdb
+D:\LTUD\DoAn\DAO\bin\Debug\DTO.dll
+D:\LTUD\DoAn\DAO\bin\Debug\DTO.pdb
+D:\LTUD\DoAn\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
+D:\LTUD\DoAn\DAO\obj\Debug\DAO.csproj.CopyComplete
+D:\LTUD\DoAn\DAO\obj\Debug\DAO.dll
+D:\LTUD\DoAn\DAO\obj\Debug\DAO.pdb

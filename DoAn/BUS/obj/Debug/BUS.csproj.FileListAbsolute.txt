@@ -1,0 +1,10 @@
+D:\LTUD\DoAn\BUS\bin\Debug\BUS.dll
+D:\LTUD\DoAn\BUS\bin\Debug\BUS.pdb
+D:\LTUD\DoAn\BUS\bin\Debug\DAO.dll
+D:\LTUD\DoAn\BUS\bin\Debug\DTO.dll
+D:\LTUD\DoAn\BUS\bin\Debug\DAO.pdb
+D:\LTUD\DoAn\BUS\bin\Debug\DTO.pdb
+D:\LTUD\DoAn\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
+D:\LTUD\DoAn\BUS\obj\Debug\BUS.csproj.CopyComplete
+D:\LTUD\DoAn\BUS\obj\Debug\BUS.dll
+D:\LTUD\DoAn\BUS\obj\Debug\BUS.pdb

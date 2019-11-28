@@ -1,0 +1,9 @@
+D:\LTUD\DoAn\DoAn\bin\Debug\DoAn.exe.config
+D:\LTUD\DoAn\DoAn\bin\Debug\DoAn.exe
+D:\LTUD\DoAn\DoAn\bin\Debug\DoAn.pdb
+D:\LTUD\DoAn\DoAn\obj\Debug\DoAn.csprojAssemblyReference.cache
+D:\LTUD\DoAn\DoAn\obj\Debug\DoAn.Form1.resources
+D:\LTUD\DoAn\DoAn\obj\Debug\DoAn.Properties.Resources.resources
+D:\LTUD\DoAn\DoAn\obj\Debug\DoAn.csproj.GenerateResource.cache
+D:\LTUD\DoAn\DoAn\obj\Debug\DoAn.exe
+D:\LTUD\DoAn\DoAn\obj\Debug\DoAn.pdb
