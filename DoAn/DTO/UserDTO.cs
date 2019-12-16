@@ -31,6 +31,13 @@ namespace DTO
             get { return _passwords; }
             set { _passwords = value; }
         }
+        private int _permission;
+
+        public int Permission
+        {
+            get { return _permission; }
+            set { _permission = value; }
+        }
 
     }
 }

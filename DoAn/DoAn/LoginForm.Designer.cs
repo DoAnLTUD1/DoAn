@@ -91,6 +91,7 @@
             this.Controls.Add(this.label1);
             this.Name = "LoginForm";
             this.Text = "Đăng Nhập";
+         
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -17,7 +17,7 @@ namespace DAO
             Provider provider = new Provider();
             try
             {
-                string str = "SELECT UserName FROM Users WHERE UserName = @UserName and Passwords = @Passwords";
+                string str = "SELECT * FROM Users WHERE UserName = @UserName and Passwords = @Passwords";
                 provider.Connect();
                 DataTable dt = provider.Select(CommandType.Text, str,
                     new SqlParameter { ParameterName = "@UserName", Value = dto.UserName },

@@ -16,9 +16,8 @@ namespace DoAn
     public partial class LoginForm : Form
     {
         public string q;
-        public LoginForm(string id)
+        public LoginForm()
         {
-            id = q;
             InitializeComponent();
         }
 
@@ -34,19 +33,25 @@ namespace DoAn
                 dto.UserName = tbUserName.Text;
                 dto.Passwords = tbPassword.Text;
                 dt = bus.DangNhap(dto);
-
+                
                 //DataSet ds = new DataSet();
                 //ds.Tables.Add(dt);
                 if (dt.Rows.Count > 0)
                 {
-                    //if (ds.Tables[0].Rows[0]["Permission"].ToString().Equals('1'))
-                    //{
-                    //    q = "1";
-                    //}
-                    //else if (ds.Tables[0].Rows[0]["Permission"].ToString().Equals('0'))
-                    //{
-                    //    q = "0";
-                    //}
+                    if (dt.Rows[0]["Permission"].Equals(1))
+                    {
+                        UserDTO us = new UserDTO();
+                        us.Permission = int.Parse(dt.Rows[0]["Permission"].ToString());
+                        MainForm main = new MainForm(us);
+                        main.ShowDialog();
+                    }
+                    else if (dt.Rows[0]["Permission"].ToString().Equals('0'))
+                    {
+                        UserDTO us = new UserDTO();
+                        us.Permission = int.Parse(dt.Rows[0]["Permission"].ToString());
+                        MainForm main = new MainForm(us);
+                        main.ShowDialog();
+                    }
                     Close();
                 }
                   
@@ -57,5 +62,7 @@ namespace DoAn
                 throw ex;   
             }
         }
+
+
     }
 }

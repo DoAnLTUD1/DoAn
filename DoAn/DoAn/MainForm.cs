@@ -7,30 +7,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DTO;
 
 namespace DoAn
 {
     public partial class MainForm : Form
     {
-        string id;
-        public MainForm()
+        public int xxx;
+        public MainForm(UserDTO us)
         {
+            xxx = us.Permission;
             InitializeComponent();
         }
 
         private void Main_Load(object sender, EventArgs e)
         {
+
             MenuAd.Visible = false;
-            MenuUser.Visible = false;
-            LoginForm form = new LoginForm(id);
+            LoginForm form = new LoginForm();
             form.ShowDialog();
-            if (id == "0")
-            {
+            if(xxx == 1){
                 MenuAd.Visible = true;
             }
             else
-                MenuUser.Visible = true;
-
+                MenuAd.Visible = true;
         }
 
         private void MenuItemThoat_Click(object sender, EventArgs e)
@@ -38,25 +38,9 @@ namespace DoAn
             Close();
         }
 
-        private void MenuThoatUser_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
-        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Application.Run(new MainForm());
-        }
-
-        private void MenuItemThemHH_Click(object sender, EventArgs e)
+        private void QuanLyHH_Click(object sender, EventArgs e)
         {
             SanPham form = new SanPham();
-            form.ShowDialog();
-        }
-
-        private void thêmToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            SanPham form = new SanPham();   
             form.ShowDialog();
         }
     }
