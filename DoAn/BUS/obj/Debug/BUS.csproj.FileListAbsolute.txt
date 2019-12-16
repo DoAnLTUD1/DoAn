@@ -8,3 +8,13 @@ D:\LTUD\DoAn\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
 D:\LTUD\DoAn\BUS\obj\Debug\BUS.csproj.CopyComplete
 D:\LTUD\DoAn\BUS\obj\Debug\BUS.dll
 D:\LTUD\DoAn\BUS\obj\Debug\BUS.pdb
+D:\DoAnLTUD\DoAn\DoAn\BUS\bin\Debug\BUS.dll
+D:\DoAnLTUD\DoAn\DoAn\BUS\bin\Debug\BUS.pdb
+D:\DoAnLTUD\DoAn\DoAn\BUS\bin\Debug\DAO.dll
+D:\DoAnLTUD\DoAn\DoAn\BUS\bin\Debug\DTO.dll
+D:\DoAnLTUD\DoAn\DoAn\BUS\bin\Debug\DAO.pdb
+D:\DoAnLTUD\DoAn\DoAn\BUS\bin\Debug\DTO.pdb
+D:\DoAnLTUD\DoAn\DoAn\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
+D:\DoAnLTUD\DoAn\DoAn\BUS\obj\Debug\BUS.csproj.CopyComplete
+D:\DoAnLTUD\DoAn\DoAn\BUS\obj\Debug\BUS.dll
+D:\DoAnLTUD\DoAn\DoAn\BUS\obj\Debug\BUS.pdb

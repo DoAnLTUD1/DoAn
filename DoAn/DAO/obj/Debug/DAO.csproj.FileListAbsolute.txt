@@ -6,3 +6,11 @@ D:\LTUD\DoAn\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
 D:\LTUD\DoAn\DAO\obj\Debug\DAO.csproj.CopyComplete
 D:\LTUD\DoAn\DAO\obj\Debug\DAO.dll
 D:\LTUD\DoAn\DAO\obj\Debug\DAO.pdb
+D:\DoAnLTUD\DoAn\DoAn\DAO\bin\Debug\DAO.dll
+D:\DoAnLTUD\DoAn\DoAn\DAO\bin\Debug\DAO.pdb
+D:\DoAnLTUD\DoAn\DoAn\DAO\bin\Debug\DTO.dll
+D:\DoAnLTUD\DoAn\DoAn\DAO\bin\Debug\DTO.pdb
+D:\DoAnLTUD\DoAn\DoAn\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
+D:\DoAnLTUD\DoAn\DoAn\DAO\obj\Debug\DAO.csproj.CopyComplete
+D:\DoAnLTUD\DoAn\DoAn\DAO\obj\Debug\DAO.dll
+D:\DoAnLTUD\DoAn\DoAn\DAO\obj\Debug\DAO.pdb

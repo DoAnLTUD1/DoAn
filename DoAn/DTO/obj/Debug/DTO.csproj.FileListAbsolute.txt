@@ -3,3 +3,8 @@ D:\LTUD\DoAn\DTO\bin\Debug\DTO.pdb
 D:\LTUD\DoAn\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
 D:\LTUD\DoAn\DTO\obj\Debug\DTO.dll
 D:\LTUD\DoAn\DTO\obj\Debug\DTO.pdb
+D:\DoAnLTUD\DoAn\DoAn\DTO\bin\Debug\DTO.dll
+D:\DoAnLTUD\DoAn\DoAn\DTO\bin\Debug\DTO.pdb
+D:\DoAnLTUD\DoAn\DoAn\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+D:\DoAnLTUD\DoAn\DoAn\DTO\obj\Debug\DTO.dll
+D:\DoAnLTUD\DoAn\DoAn\DTO\obj\Debug\DTO.pdb

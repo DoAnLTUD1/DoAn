@@ -56,7 +56,7 @@ namespace DoAn
 
         private void thêmToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SanPham form = new SanPham();
+            SanPham form = new SanPham();   
             form.ShowDialog();
         }
     }
