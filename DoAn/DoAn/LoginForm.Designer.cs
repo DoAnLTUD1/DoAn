@@ -90,8 +90,8 @@
             this.Controls.Add(this.tbUserName);
             this.Controls.Add(this.label1);
             this.Name = "LoginForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Đăng Nhập";
-         
             this.ResumeLayout(false);
             this.PerformLayout();
 

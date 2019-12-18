@@ -13,25 +13,19 @@ namespace DoAn
 {
     public partial class MainForm : Form
     {
-        public int xxx;
-        public MainForm(UserDTO us)
+        public static int xxx;
+        public MainForm()
         {
-            xxx = us.Permission;
             InitializeComponent();
         }
 
-        private void Main_Load(object sender, EventArgs e)
+        public MainForm(UserDTO us)
         {
-
-            MenuAd.Visible = false;
-            LoginForm form = new LoginForm();
-            form.ShowDialog();
-            if(xxx == 1){
-                MenuAd.Visible = true;
-            }
-            else
-                MenuAd.Visible = true;
+            xxx = us.Permission;
+ 
         }
+
+        
 
         private void MenuItemThoat_Click(object sender, EventArgs e)
         {
@@ -42,6 +36,38 @@ namespace DoAn
         {
             SanPham form = new SanPham();
             form.ShowDialog();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            MenuAd.Visible = false;
+            LoginForm form = new LoginForm();
+            form.ShowDialog();
+
+
+            if (xxx == 1)
+            {
+                MenuAd.Visible = true;
+                quảnLýToolStripMenuItem.Visible = true;
+            }
+            else
+            {
+                MenuAd.Visible = true;
+                quảnLýToolStripMenuItem.Visible = false;
+            }
+        }
+
+        private void ngườiDùngToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                UsersForm user = new UsersForm();
+                user.ShowDialog();
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }

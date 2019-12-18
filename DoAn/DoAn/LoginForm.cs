@@ -31,7 +31,7 @@ namespace DoAn
 
 
                 dto.UserName = tbUserName.Text;
-                dto.Passwords = tbPassword.Text;
+                dto.Password = tbPassword.Text;
                 dt = bus.DangNhap(dto);
                 
                 //DataSet ds = new DataSet();
@@ -43,14 +43,14 @@ namespace DoAn
                         UserDTO us = new UserDTO();
                         us.Permission = int.Parse(dt.Rows[0]["Permission"].ToString());
                         MainForm main = new MainForm(us);
-                        main.ShowDialog();
+                        
                     }
                     else if (dt.Rows[0]["Permission"].ToString().Equals('0'))
                     {
                         UserDTO us = new UserDTO();
                         us.Permission = int.Parse(dt.Rows[0]["Permission"].ToString());
                         MainForm main = new MainForm(us);
-                        main.ShowDialog();
+                        
                     }
                     Close();
                 }

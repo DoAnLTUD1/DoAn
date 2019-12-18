@@ -38,7 +38,7 @@ namespace DAO
                 Provider provider = new Provider();
                 provider.Connect();
                 int nRow = provider.ExecuteNonQuery(CommandType.Text, str,
-                    new SqlParameter { ParameterName = "@id", Value = sp.ID },
+                    new SqlParameter { ParameterName = "@id", Value = sp.MaSP },
                     new SqlParameter { ParameterName = "@tensp", Value = sp.TenSP },
                     new SqlParameter { ParameterName = "@giatien", Value = sp.GiaTien },
                     new SqlParameter { ParameterName = "@soluong", Value = sp.SoLuong },
@@ -57,7 +57,7 @@ namespace DAO
             {
                 Provider provider = new Provider();
                 provider.Connect();
-                string str = "DELETE FROM Products WHERE ID = @id";
+                string str = "DELETE FROM Products WHERE MaSP = @id";
                 int nRow = provider.ExecuteNonQuery(CommandType.Text, str,
                     new SqlParameter { ParameterName = "@id", Value = ma });
                 return nRow;
@@ -73,9 +73,9 @@ namespace DAO
             {
                 Provider provider = new Provider();
                 provider.Connect();
-                string str = "Update Products set TenSP = @TenSP, GiaTien = @GiaTien, SoLuong = @SoLuong, NSX = @NSX, DonViTinh = @DonViTinh where ID = @id";
+                string str = "Update Products set TenSP = @TenSP, GiaTien = @GiaTien, SoLuong = @SoLuong, NSX = @NSX, DonViTinh = @DonViTinh where MaSP = @id";
                 int nRow = provider.ExecuteNonQuery(CommandType.Text, str,
-                    new SqlParameter { ParameterName = "@id", Value = sp.ID },
+                    new SqlParameter { ParameterName = "@id", Value = sp.MaSP },
                     new SqlParameter { ParameterName = "@TenSP", Value = sp.TenSP },
                     new SqlParameter { ParameterName = "@GiaTien", Value = sp.GiaTien },
                     new SqlParameter { ParameterName = "@SoLuong", Value = sp.SoLuong },

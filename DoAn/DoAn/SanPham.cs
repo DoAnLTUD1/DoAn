@@ -41,7 +41,7 @@ namespace DoAn
 
                 if (dt.Rows.Count > 0)
                 {
-                    string ma = dt.Rows[dt.Rows.Count - 1]["ID"].ToString();
+                    string ma = dt.Rows[dt.Rows.Count - 1]["MaSP"].ToString();
                     int num = int.Parse(ma.Substring(2)) + 1;
                     tbxID.Text = "SP" + num.ToString("0000");
                     tbxTenSP.Text = "";
@@ -52,7 +52,7 @@ namespace DoAn
 
                     dgvSanPham.Rows[0].Selected = true;
                     RowSelected = new ProductDTO();
-                    RowSelected.ID = dgvSanPham.SelectedRows[0].Cells["ID"].Value.ToString();
+                    RowSelected.MaSP = dgvSanPham.SelectedRows[0].Cells["MaSP"].Value.ToString();
                     RowSelected.TenSP = dgvSanPham.SelectedRows[0].Cells["TenSP"].Value.ToString();
                     RowSelected.GiaTien = double.Parse(dgvSanPham.SelectedRows[0].Cells["GiaTien"].Value.ToString());
                     RowSelected.NSX = dgvSanPham.SelectedRows[0].Cells["NSX"].Value.ToString();
@@ -74,14 +74,14 @@ namespace DoAn
             if (e.RowIndex >= 0)
             {
                 RowSelected = new ProductDTO();
-                RowSelected.ID = dgvSanPham.SelectedRows[0].Cells["ID"].Value.ToString();
+                RowSelected.MaSP = dgvSanPham.SelectedRows[0].Cells["MaSP"].Value.ToString();
                 RowSelected.TenSP = dgvSanPham.SelectedRows[0].Cells["TenSP"].Value.ToString();
                 RowSelected.GiaTien = double.Parse(dgvSanPham.SelectedRows[0].Cells["GiaTien"].Value.ToString());
                 RowSelected.NSX = dgvSanPham.SelectedRows[0].Cells["NSX"].Value.ToString();
                 RowSelected.SoLuong = int.Parse(dgvSanPham.SelectedRows[0].Cells["SoLuong"].Value.ToString());
                 RowSelected.DonViTinh = dgvSanPham.SelectedRows[0].Cells["DonViTinh"].Value.ToString();
 
-                tbxID.Text = RowSelected.ID;
+                tbxID.Text = RowSelected.MaSP;
                 tbxTenSP.Text = RowSelected.TenSP;
                 tbxGiaTien.Text = RowSelected.GiaTien.ToString();
                 tbxNSX.Text = RowSelected.NSX;
@@ -102,7 +102,7 @@ namespace DoAn
                 ProductDTO sp = new ProductDTO();
                 if(tbxTenSP.Text != "" && tbxGiaTien.Text!= ""&& tbxSoLuong.Text != ""&&tbxNSX.Text!=""&&tbxDonViTinh.Text!="")
                 {
-                    sp.ID = tbxID.Text;
+                    sp.MaSP = tbxID.Text;
                     sp.TenSP = tbxTenSP.Text;
                     sp.GiaTien = double.Parse(tbxGiaTien.Text);
                     sp.SoLuong = int.Parse(tbxSoLuong.Text);
@@ -131,9 +131,9 @@ namespace DoAn
             try
             {
                 ProductDTO sp = new ProductDTO();
-                sp.ID = RowSelected.ID;
+                sp.MaSP = RowSelected.MaSP;
                 ProductBUS bus = new ProductBUS();
-                bus.Xoa(sp.ID);
+                bus.Xoa(sp.MaSP);
                 LoadDATA();
             }
             catch (Exception ex)
@@ -147,7 +147,7 @@ namespace DoAn
             try
             {
                 ProductDTO sp = new ProductDTO();
-                sp.ID = tbxID.Text;
+                sp.MaSP = tbxID.Text;
                 sp.TenSP = tbxTenSP.Text;
                 sp.GiaTien = int.Parse(tbxGiaTien.Text);
                 sp.SoLuong = int.Parse(tbxSoLuong.Text);

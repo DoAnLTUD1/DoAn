@@ -22,5 +22,17 @@ namespace BUS
                 throw ex;
             }
         }
+        public DataTable LoadUs()
+        {
+            try
+            {
+                UserDAO dao = new UserDAO();
+                return dao.LoadUs();
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

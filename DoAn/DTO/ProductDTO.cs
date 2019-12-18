@@ -8,12 +8,12 @@ namespace DTO
 {
     public class ProductDTO
     {
-        private string _id;
+        private string _maSP;
 
-        public string ID
+        public string MaSP
         {
-            get { return _id; }
-            set { _id = value; }
+            get { return _maSP; }
+            set { _maSP = value; }
         }
 
         private string _tenSP;

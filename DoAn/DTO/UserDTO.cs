@@ -24,12 +24,12 @@ namespace DTO
             get { return _userName; }
             set { _userName = value; }
         }
-        private string _passwords;
+        private string _password;
 
-        public string Passwords
+        public string Password
         {
-            get { return _passwords; }
-            set { _passwords = value; }
+            get { return _password; }
+            set { _password = value; }
         }
         private int _permission;
 
