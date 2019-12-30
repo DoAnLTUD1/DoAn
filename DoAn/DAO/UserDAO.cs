@@ -39,7 +39,7 @@ namespace DAO
             Provider provider = new Provider();
             try
             {
-                string str = "SELECT ID, Username, Password, Name FROM Users, Per_Name WHERE Permission = ID_per";
+                string str = "SELECT ID, Username, Password, Permission FROM Users, Per_Name WHERE Permission = ID_per";
                 provider.Connect();
                 DataTable dt = provider.Select(CommandType.Text, str);
                 return dt;

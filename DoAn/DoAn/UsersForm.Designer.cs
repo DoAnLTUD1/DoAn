@@ -186,7 +186,7 @@
             // 
             // Permission
             // 
-            this.Permission.DataPropertyName = "Name";
+            this.Permission.DataPropertyName = "Permission";
             this.Permission.HeaderText = "Phân Quyền";
             this.Permission.MinimumWidth = 6;
             this.Permission.Name = "Permission";
